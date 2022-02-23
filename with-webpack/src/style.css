@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: cornsilk;
+}
+
+h1 {
+  color: tomato;
+}
+
+.pet-image {
+  width: 300px;
+}
