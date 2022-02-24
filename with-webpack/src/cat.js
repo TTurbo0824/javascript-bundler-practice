@@ -8,9 +8,11 @@ export const createCuteCat = () => {
   catImage.src = cat;
   root.appendChild(catImage);
 
+  const div = create('div', 'link-container');
   const link = create('a', 'statement');
   link.href = './dog.html';
   link.innerHTML = 'you don\'t agree with that?';
-  root.appendChild(link);
+  div.appendChild(link);
+  root.appendChild(div);
   return root;
 };
