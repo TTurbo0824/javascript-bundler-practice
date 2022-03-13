@@ -1,3 +1,4 @@
+import './style.css';
 import {createElementWithClass as create} from './utilities.js';
 
 const apiURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
@@ -15,7 +16,7 @@ getDrinks().then((drink) => {
     const drinkImg = create('img', 'cocktail-image');
     drinkImg.src = el.strDrinkThumb;
 
-    const title = create('div');
+    const title = create('div', 'title');
     title.innerHTML = el.strDrink;
     root.appendChild(title);
     root.appendChild(drinkImg);
