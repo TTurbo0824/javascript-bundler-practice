@@ -4,6 +4,7 @@
 - [Without Bundler](https://github.com/TTurbo0824/javascript-bundler-practice/tree/master/without-bundler)
 - [With Webpack](https://github.com/TTurbo0824/javascript-bundler-practice/tree/master/with-webpack)<br/>
 - [With Parcel](https://github.com/TTurbo0824/javascript-bundler-practice/tree/master/with-parcel)<br/>
+- [Webpack With Babel](https://github.com/TTurbo0824/javascript-bundler-practice/tree/master/webpack-with-babel)<br/>
 <br>
 
 ⇒ **<i>[더 알아보기](https://extreme-cork-bd1.notion.site/Bundling-3fd74c3084214393ae18403e97dcb151)</i>**
