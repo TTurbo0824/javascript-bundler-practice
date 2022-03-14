@@ -13,13 +13,19 @@ async function getDrinks() {
 getDrinks().then((drink) => {
   drink.drinks.forEach((el) => {
     const root = document.querySelector('#root');
+    const post = create('div', 'post');
     const drinkImg = create('img', 'cocktail-image');
     drinkImg.src = el.strDrinkThumb;
+    post.appendChild(drinkImg);
 
+    let overlay = create('div', 'overlay');
     const title = create('div', 'title');
     title.innerHTML = el.strDrink;
-    root.appendChild(title);
-    root.appendChild(drinkImg);
+    overlay.appendChild(title);
+
+    post.append(overlay);
+    root.appendChild(post);
+
     return root;
   });
 });
