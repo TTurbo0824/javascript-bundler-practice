@@ -22,6 +22,9 @@ getDrinks().then((drink) => {
     const title = create('div', 'title');
     title.innerHTML = el.strDrink;
     overlay.appendChild(title);
+    overlay.addEventListener('click', () =>
+      newPage(el.strDrink, el.strDrinkThumb, el.strInstructions)
+    );
 
     post.append(overlay);
     root.appendChild(post);
@@ -29,3 +32,19 @@ getDrinks().then((drink) => {
     return root;
   });
 });
+
+function newPage(name, img, instruction) {
+  const root = document.querySelector('#root');
+  root.innerHTML = '';
+  // console.log(name, img, instruction);
+
+  const drinkName = create('div', 'title');
+  drinkName.innerHTML = name;
+  const drinkImg = create('img', 'cocktail-image');
+  drinkImg.src = img;
+
+  const drinkIns = create('div', 'instruction');
+  drinkIns.innerHTML = instruction;
+
+  root.append(drinkName, drinkImg, drinkIns);
+}
